@@ -26,8 +26,6 @@ KYC Tool Kit es un conjunto de productos exclusivos del equipo de Global Bridge 
 [por-que-usar-kyc-componentes.md](general/por-que-usar-kyc-componentes.md)
 {% endcontent-ref %}
 
-
-
 ## ¡Empecemos!
 
 {% content-ref url="implementacion/kyc-como-componentes.md" %}
@@ -36,6 +34,10 @@ KYC Tool Kit es un conjunto de productos exclusivos del equipo de Global Bridge 
 
 {% content-ref url="implementacion/secure-link-implementacion.md" %}
 [secure-link-implementacion.md](implementacion/secure-link-implementacion.md)
+{% endcontent-ref %}
+
+{% content-ref url="implementacion/kyc-como-api-rest-service.md" %}
+[kyc-como-api-rest-service.md](implementacion/kyc-como-api-rest-service.md)
 {% endcontent-ref %}
 
 
