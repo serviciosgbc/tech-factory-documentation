@@ -36,4 +36,4 @@ Puedes obtener un ejemplo del archivo CSV a darle clic [aquí.](https://drive.go
 
 A continuación se mostrará un video ilustrativo de como utilizar el servicio de Blacklist Masivo
 
-<figure><img src="../.gitbook/assets/BlacklistBatch.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/BlacklistBatch (1).gif" alt=""><figcaption></figcaption></figure>
