@@ -34,6 +34,10 @@ Los Headers del CSV se compone de la siguiente manera:
 
 Puedes obtener un ejemplo del archivo CSV al darle clic [aquí.](https://drive.google.com/file/d/1lJZBDYSYs-yBAyV4gi0w0ruiCCa\_TJtz/view?usp=drive\_link)
 
+{% hint style="info" %}
+El archivo CSV de carga debe estar codificado en UTF-8
+{% endhint %}
+
 A continuación se mostrará un video ilustrativo de como utilizar el servicio de Blacklist Masivo
 
 <figure><img src="../.gitbook/assets/BlacklistBatch (1).gif" alt=""><figcaption></figcaption></figure>
