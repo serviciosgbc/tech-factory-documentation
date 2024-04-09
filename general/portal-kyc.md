@@ -34,7 +34,7 @@ Los Headers del CSV se compone de la siguiente manera:
 
 Puedes obtener un ejemplo del archivo CSV al darle clic [aquí.](https://drive.google.com/file/d/1lJZBDYSYs-yBAyV4gi0w0ruiCCa\_TJtz/view?usp=drive\_link)
 
-{% hint style="info" %}
+{% hint style="warning" %}
 El archivo CSV de carga debe estar codificado en UTF-8
 {% endhint %}
 
