@@ -20,6 +20,7 @@
 * [📸 Calidad de imágen requerido](base-de-conocimientos/calidad-de-imagen-requerido.md)
 * [ℹ️ ¿Qué datos retorna el servicio de Secure Link?](base-de-conocimientos/que-datos-retorna-el-servicio-de-secure-link/README.md)
   * [🇵🇪 Perú](base-de-conocimientos/que-datos-retorna-el-servicio-de-secure-link/peru.md)
+  * [🇪🇨 Ecuador](base-de-conocimientos/que-datos-retorna-el-servicio-de-secure-link/ecuador.md)
   * [🇨🇴 Colombia](base-de-conocimientos/que-datos-retorna-el-servicio-de-secure-link/colombia.md)
   * [🇲🇽 México](base-de-conocimientos/que-datos-retorna-el-servicio-de-secure-link/mexico.md)
   * [🇵🇾 Paraguay](base-de-conocimientos/que-datos-retorna-el-servicio-de-secure-link/paraguay.md)
