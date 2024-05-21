@@ -274,7 +274,7 @@ Endpoint para recuperar similitud entre dos rostros
 
 <mark style="color:green;">`POST`</mark>`{{host_api}}/api`/v1/kyc-kit/service/ocr
 
-\<Description of the endpoint>
+Endpoint para analizar persona en lista de sanciones //o pep's
 
 **Headers**
 
