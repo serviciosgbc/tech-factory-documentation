@@ -272,9 +272,9 @@ Endpoint para recuperar similitud entre dos rostros
 
 ### Lista de sanciones y PEP's
 
-<mark style="color:green;">`POST`</mark>`{{host_api}}/api`/v1/kyc-kit/service/ocr
+<mark style="color:green;">`POST`</mark>`{{host_api}}`/api/v1/kyc-kit/service/blacklist
 
-Endpoint para analizar persona en lista de sanciones //o pep's
+Endpoint para analizar persona en lista de sanciones /o pep's
 
 **Headers**
 
