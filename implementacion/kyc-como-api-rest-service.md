@@ -270,18 +270,18 @@ Endpoint para recuperar similitud entre dos rostros
 
 ### 3- Lista de sanciones y PEP's
 
-## Create a new user
+### Lista de sanciones y PEP's
 
-<mark style="color:green;">`POST`</mark> `/users`
+<mark style="color:green;">`POST`</mark>`{{host_api}}/api`/v1/kyc-kit/service/ocr
 
 \<Description of the endpoint>
 
 **Headers**
 
-| Name          | Value              |
-| ------------- | ------------------ |
-| Content-Type  | `application/json` |
-| Authorization | `Bearer <token>`   |
+| Name          | Value                                |
+| ------------- | ------------------------------------ |
+| access\_token | access\_token generado anteriormente |
+| client\_id    | client id provista por GBC           |
 
 **Body**
 
@@ -304,7 +304,20 @@ Endpoint para recuperar similitud entre dos rostros
   "message": "string",
   "data": {
     "result": string, //mensaje de si se encontro o no coincidencias
-    "match": json_array // array de listas de sanciones y/o pep en la que se encontraron coincidencias
+    "match": [
+                {
+                     "list_id": string, id de la lista
+                     "list_description": string, //nombre de la lista
+                     "list_category": string, //categoria de la lista
+                     "names": string, //nombres con las que se encontraron coincidencias en la lista
+                     "last_update": string, //fecha de la ultima actualización de la lista
+                     "obs": {
+                                  "case": string, //motivo por la cual se encuentra en la lista
+                                  "authority": string, //agencia que se encargó de agregarle en la lista
+                                  "birth_place": string //lugar de nacimiento de la persona 
+                            }
+                }
+    ] // array de listas de sanciones y/o pep en la que se encontraron coincidencias
   }
 }
 ```
