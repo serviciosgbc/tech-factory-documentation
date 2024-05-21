@@ -278,21 +278,21 @@ Endpoint para analizar persona en lista de sanciones /o pep's
 
 **Headers**
 
-| Name          | Value                                |
-| ------------- | ------------------------------------ |
-| access\_token | access\_token generado anteriormente |
-| client\_id    | client id provista por GBC           |
+| Name                                            | Value                                |
+| ----------------------------------------------- | ------------------------------------ |
+| access\_token<mark style="color:red;">\*</mark> | access\_token generado anteriormente |
+| client\_id<mark style="color:red;">\*</mark>    | client id provista por GBC           |
 
 **Body**
 
-| Name               | Type   | Description                          |
-| ------------------ | ------ | ------------------------------------ |
-| `first_name`       | string | primer nombre                        |
-| second\_name       | string | segundo nombre                       |
-| first\_last\_name  | string | primer apellido                      |
-| second\_last\_name | string | segundo apellido                     |
-| birth\_date        | string | fecha nacimiento formato: yyyy-mm-dd |
-| country            | string | lugar de nacimiento formato ISO 3166 |
+| Name                                                | Type   | Description                          |
+| --------------------------------------------------- | ------ | ------------------------------------ |
+| `first_name`<mark style="color:red;">\*</mark>      | string | primer nombre                        |
+| second\_name                                        | string | segundo nombre                       |
+| first\_last\_name<mark style="color:red;">\*</mark> | string | primer apellido                      |
+| second\_last\_name                                  | string | segundo apellido                     |
+| birth\_date                                         | string | fecha nacimiento formato: yyyy-mm-dd |
+| country                                             | string | lugar de nacimiento formato ISO 3166 |
 
 **Response**
 
