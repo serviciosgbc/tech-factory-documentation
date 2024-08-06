@@ -68,6 +68,7 @@ Dentro de **document\_data** hay 4 campos booleanos que permitirán alertar cuan
         "document_type": string | null,
         "marital_status": string | null,
         "document_number": string | null, //Número de cédula de identidad
+        "fingerprints_id": string | null, //Número de huella dactilar, aplica a ciertos países
         "documents_image": {
             "first_image": string | null,
             "second_image": string | null,
