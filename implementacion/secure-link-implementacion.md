@@ -26,7 +26,9 @@ Ambiente proveída al cliente para realizar sus pruebas y familiarizarse con el 
 
 El Portal KYC se accede con la siguiente url: [https://dash-kyc-staging.globalbridgeconnections.com.py](https://dash-kyc-staging.globalbridgeconnections.com.py/)/
 
-Host Api: [https://stagingservices.globalbridgeconnections.com.py](https://stagingservices.globalbridgeconnections.com.py)/
+Host Api: [https://stagingservices.globalbridgeconnections.com.py](https://stagingservices.globalbridgeconnections.com.py)/  <mark style="color:$danger;">(Deprecado desde el 01/09/2025)</mark>
+
+Host Api: [https://gbc-py-core-staging-api-products-rtm3lv2joa-uc.a.run.app/](https://gbc-py-core-staging-api-products-rtm3lv2joa-uc.a.run.app/)
 
 #### Production
 
@@ -34,7 +36,9 @@ Ambiente proveída al cliente con el cual operará una vez culminada sus pruebas
 
 El Portal KYC se accede con la siguiente url: [https://dash-kyc.globalbridgeconnections.com.py/](https://dash-kyc.globalbridgeconnections.com.py/)
 
-Host Api: [https://services.globalbridgeconnections.com.py](https://services.globalbridgeconnections.com.py)/
+Host Api: [https://services.globalbridgeconnections.com.py](https://services.globalbridgeconnections.com.py)/ <mark style="color:$danger;">(Deprecado desde el 01/09/2025)</mark>
+
+Host Api: [https://gbc-py-core-master-api-products-rtm3lv2joa-uc.a.run.app/](https://gbc-py-core-master-api-products-rtm3lv2joa-uc.a.run.app/)
 
 ## Autorización
 
@@ -98,7 +102,9 @@ Para ello se realiza una solicitud a un Endpoind cuyas características son la s
 
 ## Validación y Registo de JWT
 
-<mark style="color:green;">`POST`</mark> `{host_api}/api/v1/kyc-kit/oauth/token`
+<mark style="color:green;">`POST`</mark> `{host_api}api/v1/kyc-kit/oauth/token` <mark style="color:$danger;">(Deprecado desde el 01/09/2025)</mark>
+
+<mark style="color:green;">`POST`</mark> `{host_api}api-hub/oauth2/v1/token`&#x20;
 
 Endpoint para verificar y registrar JWT
 
@@ -140,7 +146,9 @@ Para ello se realiza una solicitud a un Endpoind cuyas características son la s
 
 ## Generar Link Seguro
 
-<mark style="color:green;">`POST`</mark> `{{host_api}}/api/v1/kyc-kit/processing_link`
+<mark style="color:green;">`POST`</mark> `{host_api}api/v1/kyc-kit/processing_link` <mark style="color:$danger;">(Deprecado desde el 01/09/2025)</mark>
+
+<mark style="color:green;">`POST`</mark> `{host_api}api-hub/v1/processing_document`&#x20;
 
 Endpoint que se encarga de generar el link seguro
 
@@ -194,7 +202,9 @@ Para ello se realiza una solicitud a un Endpoind cuyas características son la s
 
 ## Generar Link Seguro
 
-<mark style="color:green;">`POST`</mark> `{{host_api}}/api/v1/kyc-kit/processing_link`
+<mark style="color:green;">`POST`</mark> `{host_api}api/v1/kyc-kit/processing_link` <mark style="color:$danger;">(Deprecado desde el 01/09/2025)</mark>
+
+<mark style="color:green;">`POST`</mark> `{host_api}api-hub/v1/processing_document` &#x20;
 
 Endpoint que se encarga de generar el link seguro
 
