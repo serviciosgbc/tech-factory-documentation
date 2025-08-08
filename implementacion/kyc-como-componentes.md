@@ -72,6 +72,7 @@ import axios from "axios";
 
 const TOKEN    = "**************" //Bearer Token entregado por Global Bridge Connections
 const clientId = "**************" //Client ID entregado por Global Bridge Connections
+const host_api = "https://gbc-py-core-master-api-products-rtm3lv2joa-uc.a.run.app/"
 /* Se recomienda administrar estos valores como variables de entorno */
 
 async function getAccessToken(){
@@ -82,7 +83,7 @@ async function getAccessToken(){
     
     const parseReq = {
       method: "POST",
-      url: "https://services.globalbridgeconnections.com.py/oauth/access-token",
+      url: `${host_api}api-hub/oauth2/v1/generate_access_token`,
       headers: customHeaders,
       data: {
           "grant_type":"client_credentials",

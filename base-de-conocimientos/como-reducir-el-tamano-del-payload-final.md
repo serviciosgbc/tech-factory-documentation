@@ -18,7 +18,7 @@ Para obtener las imágenes en base64 se precisa de un JWT generado con las crede
 
 La primera opción consiste en recuperar todas las imágenes recabas durante un link seguro a través de un endpoint habilitado que tiene como parámetro el tracking\_id obtenida en el Payload Final.
 
-<mark style="color:blue;">`GET`</mark> `{{host_api}}/api/v1/kyc-kit/get_images?tracking_id={tracking_id}`
+<mark style="color:blue;">`GET`</mark> `{host_api}api-hub/v1/images?tracking_id={tracking_id}`
 
 #### Query Parameters
 
@@ -36,7 +36,7 @@ La primera opción consiste en recuperar todas las imágenes recabas durante un 
 
 La segunda opción consiste en recuperar una sola imagen a través de un endpoint habilitado que tiene como parámetro mediante el código identificador del base64 retornada en el Payload Final.
 
-<mark style="color:blue;">`GET`</mark> `{{host_sensedia}}/api/v1/kyc-kit/get_image?image_id={image_id}`
+<mark style="color:blue;">`GET`</mark> `{host_api}api-hub/v1/image?image_id={image_id}`
 
 #### Query Parameters
 

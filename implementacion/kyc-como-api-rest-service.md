@@ -26,7 +26,9 @@ Ambiente proveída al cliente para realizar sus pruebas y familiarizarse con el 
 
 El Portal KYC se accede con la siguiente url: [https://dash-kyc-staging.globalbridgeconnections.com.py](https://dash-kyc-staging.globalbridgeconnections.com.py/)/
 
-Host Api: [https://stagingservices.globalbridgeconnections.com.py](https://stagingservices.globalbridgeconnections.com.py)/
+Host Api: [https://stagingservices.globalbridgeconnections.com.py](https://stagingservices.globalbridgeconnections.com.py)/  <mark style="color:$danger;">(Deprecado desde el 19/08/2025)</mark>
+
+Host Api: [https://gbc-py-core-staging-api-products-rtm3lv2joa-uc.a.run.app/](https://gbc-py-core-staging-api-products-rtm3lv2joa-uc.a.run.app/)
 
 #### Production
 
@@ -34,7 +36,9 @@ Ambiente proveída al cliente con el cual operará una vez culminada sus pruebas
 
 El Portal KYC se accede con la siguiente url: [https://dash-kyc.globalbridgeconnections.com.py/](https://dash-kyc.globalbridgeconnections.com.py/)
 
-Host Api: [https://services.globalbridgeconnections.com.py](https://services.globalbridgeconnections.com.py)/
+Host Api: [https://services.globalbridgeconnections.com.py](https://services.globalbridgeconnections.com.py)/ <mark style="color:$danger;">(Deprecado desde el 01/09/2025)</mark>
+
+Host Api: [https://gbc-py-core-master-api-products-rtm3lv2joa-uc.a.run.app/](https://gbc-py-core-master-api-products-rtm3lv2joa-uc.a.run.app/)
 
 ## Autorización
 
@@ -52,7 +56,7 @@ Obs: Las credenciales podrían ser distintas según el ambiente en la que opere.
 
 ## Generar Access Token
 
-<mark style="color:green;">`POST`</mark> `{{host_api}}/oauth/access-token`
+<mark style="color:green;">`POST`</mark> `{host_api}api-hub/oauth2/v1/generate_access_token`
 
 Endpoint que se encarga de generar el access token que se utilizará como authorizacion en los endpoints de KYC API Rest Services
 
@@ -107,7 +111,7 @@ Endpoint que se encarga de generar el access token que se utilizará como author
 
 ## Lectura de documento de identidad (OCR)
 
-<mark style="color:green;">`POST`</mark> `{{host_api}}/api/v1/kyc-kit/service/ocr`
+<mark style="color:green;">`POST`</mark> `{host_api}api-hub/v1/kyc/ocr`
 
 Endpoint para recuperar los datos extraidos de documentos
 
@@ -203,7 +207,9 @@ Endpoint para recuperar los datos extraidos de documentos
 
 ## FaceMatch
 
-<mark style="color:green;">`POST`</mark> `{{host_api}}/api/v1/kyc-kit/service/facematch`
+<mark style="color:green;">`POST`</mark> `{host_api}api-hub/v1/kyc/facematch`
+
+
 
 Endpoint para recuperar similitud entre dos rostros
 
@@ -272,7 +278,7 @@ Endpoint para recuperar similitud entre dos rostros
 
 ### Lista de sanciones y PEP's
 
-<mark style="color:green;">`POST`</mark>`{{host_api}}`/api/v1/kyc-kit/service/blacklist
+<mark style="color:green;">`POST`</mark>`{host_api}api-hub/v1/kyc/blacklist`
 
 Endpoint para analizar persona en lista de sanciones /o pep's
 
@@ -287,7 +293,7 @@ Endpoint para analizar persona en lista de sanciones /o pep's
 
 | Name                                                | Type   | Description                          |
 | --------------------------------------------------- | ------ | ------------------------------------ |
-| `first_name`<mark style="color:red;">\*</mark>      | string | primer nombre                        |
+| first\_name<mark style="color:red;">\*</mark>       | string | primer nombre                        |
 | second\_name                                        | string | segundo nombre                       |
 | first\_last\_name<mark style="color:red;">\*</mark> | string | primer apellido                      |
 | second\_last\_name                                  | string | segundo apellido                     |
