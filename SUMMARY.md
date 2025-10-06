@@ -23,6 +23,7 @@
   * [🇪🇨 Ecuador](base-de-conocimientos/que-datos-retorna-el-servicio-de-secure-link/ecuador.md)
   * [🇨🇴 Colombia](base-de-conocimientos/que-datos-retorna-el-servicio-de-secure-link/colombia.md)
   * [🇲🇽 México](base-de-conocimientos/que-datos-retorna-el-servicio-de-secure-link/mexico.md)
+  * [🇧🇴 Bolivia](base-de-conocimientos/que-datos-retorna-el-servicio-de-secure-link/bolivia.md)
   * [🇵🇾 Paraguay](base-de-conocimientos/que-datos-retorna-el-servicio-de-secure-link/paraguay.md)
   * [🇻🇪 Venezuela](base-de-conocimientos/que-datos-retorna-el-servicio-de-secure-link/venezuela.md)
 * [ℹ️ ¿Cómo reducir el tamaño del Payload Final?](base-de-conocimientos/como-reducir-el-tamano-del-payload-final.md)
