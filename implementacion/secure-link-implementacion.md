@@ -222,13 +222,13 @@ Endpoint que se encarga de generar el link seguro
 | external\_id <mark style="color:red;">\*</mark>          | String                       | ID con el que el cliente podrá identificar el proceso.                                                                                                            |
 | authorization                                            | String \| Undefined          | <p>ApiKey que se utilizará como header Authorization al hacer el envio de datos al callback del cliente</p><p><br></p>                                            |
 | modules<mark style="color:red;">\*</mark>                | String                       | aqui va las id de los modulos (ej ”1099,1095,1096,1098”) que el cliente desee activar en el link seguro. Se especificará mejor en Módulos Validos.                |
-| data.first\_name<mark style="color:red;">\*</mark>       |  String \| Null \| Undefined | Requerido solo si module 1095 existe y 1099 no existe, primer nombre a utilizarse en módulo 1095.                                                                 |
-| data.second\_name                                        |  String \| Null \| Undefined | Segundo nombre a utilizarse en módulo 1095.                                                                                                                       |
-| data.first\_last\_name<mark style="color:red;">\*</mark> |  String \| Null \| Undefined | Requerido solo si module 1095 existe y 1099 no existe, primer apellido a utilizarse en módulo 1095.                                                               |
-| data.second\_last\_name                                  |  String \| Null \| Undefined | country\_code a utilizarse en módulo 1095.                                                                                                                        |
-| data.doc<mark style="color:red;">\*</mark>               |  String \| Null \| Undefined | Requerido solo si module 1098 existe y 1099 no existe, reference image del documento a utilizarse en módulo 1098.                                                 |
-| data.selfie<mark style="color:red;">\*</mark>            |  String \| Null \| Undefined | Requerido solo si module 1098 existe y 1096 no existe, selfie del documento a utilizarse en módulo 1095.                                                          |
-| document\_reader\_dual\_mode                             | Boolean                      | Por defecto se tomará el valor configurado en el dashboard, si en un proceso de onboarding en particular se necesita apagar, puede enviar este atributo en False  |
+| data.first\_name<mark style="color:red;">\*</mark>       |  String \| null \| Undefined | Requerido solo si module 1095 existe y 1099 no existe, primer nombre a utilizarse en módulo 1095.                                                                 |
+| data.second\_name                                        |  String \| null \| Undefined | Segundo nombre a utilizarse en módulo 1095.                                                                                                                       |
+| data.first\_last\_name<mark style="color:red;">\*</mark> |  String \| null \| Undefined | Requerido solo si module 1095 existe y 1099 no existe, primer apellido a utilizarse en módulo 1095.                                                               |
+| data.second\_last\_name                                  |  String \| null \| Undefined | country\_code a utilizarse en módulo 1095.                                                                                                                        |
+| data.doc<mark style="color:red;">\*</mark>               |  String \| null \| Undefined | Requerido solo si module 1098 existe y 1099 no existe, reference image del documento a utilizarse en módulo 1098.                                                 |
+| data.selfie<mark style="color:red;">\*</mark>            |  String \| null \| Undefined | Requerido solo si module 1098 existe y 1096 no existe, selfie del documento a utilizarse en módulo 1095.                                                          |
+| document\_reader\_dual\_mode                             | Boolean \| null              | Por defecto se tomará el valor configurado en el dashboard, si en un proceso de onboarding en particular se necesita apagar, puede enviar este atributo en False  |
 
 {% tabs %}
 {% tab title="200: OK Link Seguro creado" %}
@@ -257,8 +257,7 @@ Endpoint que se encarga de generar el link seguro
 
 }
 
-\
-
+<br>
 {% endtab %}
 
 {% tab title="400: Bad Request Falta ingresar modulos" %}
@@ -272,8 +271,7 @@ Endpoint que se encarga de generar el link seguro
 
 }
 
-\
-
+<br>
 {% endtab %}
 
 {% tab title="400: Bad Request Módulos ingresados no son válidos" %}
@@ -287,8 +285,7 @@ Endpoint que se encarga de generar el link seguro
 
 }
 
-\
-
+<br>
 {% endtab %}
 
 {% tab title="401: Unauthorized JWT invalido" %}
@@ -302,8 +299,7 @@ Endpoint que se encarga de generar el link seguro
 
 }
 
-\
-
+<br>
 {% endtab %}
 
 {% tab title="500: Internal Server Error Internal Error" %}

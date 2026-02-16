@@ -23,7 +23,7 @@ Tras completar el proceso se enviará un JSON con toda la data recaudada usando 
 
 ## 1 - Lectura de documento de identidad (OCR)
 
-Vista donde se carga un documento de identidad, reconoce la información y extrae para ser retornada en formato JSON, con esto permite automatizar la captura de datos y reduce el margen de error en una transcripción. Los datos que retorna el componente son todos los capturados del documento. (Varían de acuerdo al país y tipo de documento)
+Vista donde se carga un documento de identidad, reconoce la información y extrae para ser retornada en formato JSON, con esto permite automatizar la captura de datos y reduce el margen de error en una transcripción. Los datos que retorna el componente son todos los capturados del documento. (Varían de acuerdo al país y tipo de documento). Se puede optar por solicitar uno o ambos lados del documento según la necesidad.
 
 <figure><img src="../.gitbook/assets/Captura de pantalla 2023-05-30 a la(s) 11.44.02.png" alt=""><figcaption></figcaption></figure>
 
